@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .grid-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          justify-items: center; /* Center-align all items within the grid container */
+          gap: 10px;
+          border: 2px solid black;
+          background-color: burlywood;
+        }
+    
+        .item {
+          background-color: lightblue;
+          border: 1px solid darkblue;
+          padding: 10px;
+        }
+    
+        .left-aligned {
+          justify-self: start; /* Left-align this specific item within the grid */
+        }
+      </style>
+    </head>
+    <body>
+      <div class="grid-container">
+        <div class="item">Item 1</div>
+        <div class="item left-aligned">Item 2 (Left-aligned)</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+      </div>
+
+
+
+</body>
+</html>
+
+<!-- 
+Question 2:Explain the difference between justify-items and justify-self using code examples.
+
+justify-items and justify-self are CSS properties used in the context of CSS Grid and CSS Flexbox to control the horizontal alignment of items within a grid or a flex container. They have distinct purposes:
+
+justify-items:
+justify-items is applied to the container (grid or flex container) and sets the default horizontal alignment for all items within it. This property aligns items as a group
+
+justify-self:
+justify-self is applied to individual items within a grid or a flex container and allows you to control the horizontal alignment of each item independently. -->

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        display: flex;
+        height: 88vh;
+        grid-template-columns : repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        padding: 30px;
+     
+        align-items: center;
+     
+
+    }
+
+  
+
+    .image-section {
+       width:100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: 90%;
+        border: 5px solid black;
+        padding: 10px;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    .image-section{
+      
+    }
+    .row-1{
+        grid-row: span 1;
+    }
+    .row-2{
+        grid-row: span 2;
+    }
+    .row-3{
+        grid-row: span 3;
+    }
+    .col-1{
+        grid-column: span 1;
+    }
+.col-3{
+    grid-column: span 3;
+}
+    .col-2 {
+        grid-column: span 2;
+    }
+    .img{
+       background-size: cover;  
+    }
+
+</style>
+<body>
+    <h1>Task 2</h1>
+     <div class="container">
+       
+        <div class="image-section">
+           <div class="img col-2" style="background-color: bisque;"> <H1>A</H1></div>
+           <div class="img col-1 row-2" style="background-color:bisque"> <H1>B</H1></div>
+           <div class="img col-1 row-1 " style="background-color: bisque;"><H1>C</H1></div>
+           <div class="img col-1 row-1" style="background-color: bisque;"><H1>D</H1> </div>
+        </div>
+    </div>
+</body>
+</html>
